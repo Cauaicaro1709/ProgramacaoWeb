@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com 3 Colunas e Containers Fluídos</title>
+    <style>
+        /* Resetando o margin e padding padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo geral para o body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container fluído */
+        .container-fluid {
+            width: 100%; /* Container ocupa 100% da largura da tela */
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        /* Estilo para as colunas internas */
+        .coluna {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #eaeaea;
+        }
+
+        /* Container da coluna esquerda */
+        .coluna-esquerda {
+            width: 25%;
+            background-color: #19dc64;
+        }
+
+        /* Container da coluna central */
+        .coluna-central {
+            width: 50%;
+            background-color: #36b6c9;
+        }
+
+        /* Container da coluna direita */
+        .coluna-direita {
+            width: 20%;
+            background-color: #8261ee;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .container-fluid {
+                padding: 10px; /* Menos padding em telas pequenas */
+            }
+
+            .coluna-esquerda, .coluna-central, .coluna-direita {
+                width: 100%; /* Colunas ocupam 100% da largura disponível */
+                margin-bottom: 20px; /* Espaçamento entre as colunas empilhadas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Coluna Esquerda -->
+        <div class="coluna coluna-esquerda">
+            <h2>Coluna Esquerda</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet metus quis nunc vehicula gravida. Praesent aliquam ex id velit auctor consequat. Duis sodales fringilla neque, et varius felis sodales in. Phasellus finibus sit amet ante non egestas. Praesent egestas semper sapien, quis consectetur ante elementum vestibulum. Phasellus feugiat neque a eros pellentesque scelerisque. In neque eros, condimentum vitae convallis in, facilisis accumsan turpis. In in nunc non turpis imperdiet elementum eget in erat. In id augue vehicula, ultrices velit vel, tincidunt risus.</p>
+        </div>
+
+        <!-- Coluna Central -->
+        <div class="coluna coluna-central">
+            <h2>Coluna Central</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet metus quis nunc vehicula gravida. Praesent aliquam ex id velit auctor consequat. Duis sodales fringilla neque, et varius felis sodales in. Phasellus finibus sit amet ante non egestas. Praesent egestas semper sapien, quis consectetur ante elementum vestibulum. Phasellus feugiat neque a eros pellentesque scelerisque. In neque eros, condimentum vitae convallis in, facilisis accumsan turpis. In in nunc non turpis imperdiet elementum eget in erat. In id augue vehicula, ultrices velit vel, tincidunt risus.</p>
+        </div>
+
+        <!-- Coluna Direita -->
+        <div class="coluna coluna-direita">
+            <h2>Coluna Direita</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet metus quis nunc vehicula gravida. Praesent aliquam ex id velit auctor consequat. Duis sodales fringilla neque, et varius felis sodales in. Phasellus finibus sit amet ante non egestas. Praesent egestas semper sapien, quis consectetur ante elementum vestibulum. Phasellus feugiat neque a eros pellentesque scelerisque. In neque eros, condimentum vitae convallis in, facilisis accumsan turpis. In in nunc non turpis imperdiet elementum eget in erat. In id augue vehicula, ultrices velit vel, tincidunt risus.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com 2 Colunas e Containers</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .coluna {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ed0909;
+        }
+
+        /* Container dentro da coluna esquerda */
+        .coluna-esquerda {
+            width: 30%;
+            background-color: #958a8a;
+        }
+
+        /* Container dentro da coluna direita */
+        .coluna-direita {
+            width: 65%;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .coluna-esquerda, .coluna-direita {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Coluna Esquerda com seu próprio container -->
+        <div class="coluna coluna-esquerda">
+            <h2>Coluna Esquerda</h2>
+            <p>Conteúdo da coluna esquerda. Este é um exemplo de como o conteúdo pode ser organizado dentro de um container separado.</p>
+        </div>
+
+        <!-- Coluna Direita com seu próprio container -->
+        <div class="coluna coluna-direita">
+            <h2>Coluna Direita</h2>
+            <p>Conteúdo da coluna direita. Aqui você pode adicionar texto, imagens ou outros elementos dentro do container dessa coluna.</p>
+        </div>
+    </div>
+</body>
+</html>
