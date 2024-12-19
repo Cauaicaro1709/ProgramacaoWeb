@@ -1,0 +1,23 @@
+<%- include('./partials/header') %>
+  <main>
+    <div class="ui segment">
+      <h1>Users Route</h1>
+      <p>This is the Users route</p>
+      <h2><%= subheading %></h2>
+      <ul>
+        <% characters.forEach(function(character) {%> 
+        <li class="ui segment">
+          <strong> <%= character.name %></strong>
+          is <%= character.role %> at Hogwarts.
+          <% }); %>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <%- include('./partials/footer') %>
+  </footer>
+
+  </body>
+</html>
