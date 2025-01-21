@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preço do Bitcoin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #3b6978;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 50%;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #3b6978;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    tr:hover {
+      background-color: #e0e0e0;
+    }
+    footer {
+      margin-top: 30px;
+      padding: 10px 0;
+      background-color: #3b6978;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Preço do Bitcoin</h1>
+  </header>
+  <table>
+    <thead>
+      <tr>
+        <th>Moeda</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong><%= currency %></strong></td>
+        <td><strong><%= rate %></strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>
+    <p>Última atualização: <%= updated %></p>
+    <p><%= disclaimer %></p>
+  </footer>
+</body>
+</html>
